@@ -11,6 +11,11 @@ import androidx.preference.PreferenceManager
 import androidx.preference.PreferenceScreen
 import com.bqliang.customview.simpledraw.DashBoardViewFragment
 import com.bqliang.customview.simpledraw.PieViewFragment
+import com.bqliang.customview.text.AlignCenterTextViewFragment
+import com.bqliang.customview.text.AlignEdgeTextViewFragment
+import com.bqliang.customview.text.MultiLineTextViewFragment
+import com.bqliang.customview.text.NewsPaperViewFragment
+import com.bqliang.customview.text.SportViewFragment
 import com.bqliang.customview.xfermode.CircleAvatarViewWithXfermodeFragment
 import com.google.android.material.transition.MaterialSharedAxis
 import kotlin.reflect.KClass
@@ -26,6 +31,13 @@ class HomeFragment : PreferenceFragmentCompat(),
             }
             prefCategory("Xfermode") {
                 fragment("CircleAvatarView", CircleAvatarViewWithXfermodeFragment::class)
+            }
+            prefCategory("文字的测量") {
+                fragment("SportView", SportViewFragment::class)
+                fragment("AlignCenterTextView", AlignCenterTextViewFragment::class)
+                fragment("AlignEdgeTextView", AlignEdgeTextViewFragment::class)
+                fragment("MultiLineTextView", MultiLineTextViewFragment::class)
+                fragment("NewsPaperView", NewsPaperViewFragment::class)
             }
         }
     }
