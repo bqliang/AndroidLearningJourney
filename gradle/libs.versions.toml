@@ -1,0 +1,91 @@
+[versions] ########################################################################################
+androidGradlePlugin = "8.1.2"
+androidxActivity = "1.8.0"
+androidxAppCompat = "1.6.1"
+androidxBrowser = "1.6.0"
+androidxComposeBom = "2023.10.01"
+androidxComposeCompiler = "1.5.3"
+androidxConstraintlayout = "2.1.4"
+androidxCore = "1.12.0"
+androidxCoreSplashscreen = "1.0.1"
+androidxLifecycle = "2.6.2"
+androidxDrawerlayout = "1.2.0"
+androidxEspresso = "3.5.1"
+androidxFragment = "1.6.1"
+androidxNavigation = "2.7.4"
+androidxPreference = "1.2.1"
+androidxRecyclerview = "1.3.2"
+androidxTestExt = "1.1.5"
+codeLocator = "2.0.3"
+coilBom = "2.4.0"
+junit4 = "4.13.2"
+kotlin = "1.9.10"
+kotlinxCoroutines = "1.7.3"
+kotlinxDatetime = "0.4.1"
+ksp = "1.9.10-1.0.13"
+material = "1.10.0"
+retrofit = "2.9.0"
+room = "2.6.0"
+
+[libraries] #######################################################################################
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "androidxActivity" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
+androidx-browser = { group = "androidx.browser", name = "browser", version.ref = "androidxBrowser" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidxConstraintlayout" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "androidxCoreSplashscreen" }
+androidx-drawerlayout = { group = "androidx.drawerlayout", name = "drawerlayout", version.ref = "androidxDrawerlayout" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "androidxFragment" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-service = { group = "androidx.lifecycle", name = "lifecycle-service", version.ref = "androidxLifecycle" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidxLifecycle" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "androidxNavigation" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidxNavigation" }
+androidx-preference-ktx = { group = "androidx.preference", name = "preference-ktx", version.ref = "androidxPreference" }
+android-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "androidxRecyclerview" }
+androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxEspresso" }
+androidx-test-ext = { group = "androidx.test.ext", name = "junit", version.ref = "androidxTestExt" }
+code-locator = { group = "com.bytedance.tools.codelocator", name = "codelocator-core", version.ref = "codeLocator" }
+coil-bom = { group = "io.coil-kt", name = "coil-bom", version.ref = "coilBom" }
+coil-kt = { group = "io.coil-kt", name = "coil" }
+coil-kt-compose = { group = "io.coil-kt", name = "coil-compose" }
+junit4 = { group = "junit", name = "junit", version.ref = "junit4" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinxDatetime" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+
+# Dependencies of the included build-logic
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+
+[plugins] #########################################################################################
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
+# Plugins defined by this project
+androidlearningjourney-android-application = { id = "androidlearningjourney.android.application", version = "unspecified" }
+androidlearningjourney-android-application-compose = { id = "androidlearningjourney.android.application.compose", version = "unspecified" }
+androidlearningjourney-android-library = { id = "androidlearningjourney.android.library", version = "unspecified" }
+androidlearningjourney-android-library-compose = { id = "androidlearningjourney.android.library.compose", version = "unspecified" }
+androidlearningjourney-android-room = { id = "androidlearningjourney.android.room", version = "unspecified" }
+androidlearningjourney-jvm-library = { id = "androidlearningjourney.jvm.library", version = "unspecified" }
+
+[bundles] #########################################################################################
