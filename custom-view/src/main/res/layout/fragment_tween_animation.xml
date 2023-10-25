@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="btnScale,btnAlpha,btnRotate,btnTranslate,btnTranslateWithoutFillBefore,btnSet"
+        app:flow_horizontalGap="8dp"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scale"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnAlpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alpha"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnRotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotate"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnTranslate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Translate"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnTranslateWithoutFillBefore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Translate without FillBefore"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#7986CB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flowBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

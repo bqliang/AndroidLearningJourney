@@ -9,6 +9,9 @@ import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.PreferenceGroup
 import androidx.preference.PreferenceManager
 import androidx.preference.PreferenceScreen
+import com.bqliang.customview.anim.animation.FrameAnimWithAnimDrawableFragment
+import com.bqliang.customview.anim.animation.FrameAnimWithAnimatedVectorDrawableFragment
+import com.bqliang.customview.anim.animation.TweenAnimationFragment
 import com.bqliang.customview.clip.CircleAvatarViewWithClipFragment
 import com.bqliang.customview.clip.SimpleClipRectViewFragment
 import com.bqliang.customview.simpledraw.DashBoardViewFragment
@@ -54,6 +57,11 @@ class HomeFragment : PreferenceFragmentCompat(),
                 fragment("FlipView", FlipViewFragment::class)
                 fragment("HalfFlipView", HalfFlipViewFragment::class)
                 fragment("BevelFlipView", BevelFlipViewFragment::class)
+            }
+            prefCategory("视图动画") {
+                fragment("帧动画-AnimationDrawable", FrameAnimWithAnimDrawableFragment::class)
+                fragment("帧动画-AnimationVectorDrawable", FrameAnimWithAnimatedVectorDrawableFragment::class)
+                fragment("补间动画", TweenAnimationFragment::class)
             }
         }
     }

@@ -1,0 +1,61 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="960dp"
+            android:height="960dp"
+            android:viewportWidth="960"
+            android:viewportHeight="960">
+            <group
+                android:name="group"
+                android:pivotX="480"
+                android:pivotY="480">
+                <path
+                    android:name="top"
+                    android:pathData="M 320 480 L 320 200 L 760 480 L 320 480 Z"
+                    android:fillColor="#000"
+                    android:strokeWidth="1"/>
+                <path
+                    android:name="bottom"
+                    android:pathData="M 320 480 L 320 760 L 760 480 L 320 480 Z"
+                    android:fillColor="#000"
+                    android:strokeWidth="1"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="top">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="pathData"
+                android:duration="300"
+                android:valueFrom="M 320 480 L 320 200 L 760 480 L 760 480 L 320 480 Z"
+                android:valueTo="M 200 400 L 200 240 L 760 240 L 760 400 L 200 400 Z"
+                android:valueType="pathType"
+                android:interpolator="@android:anim/accelerate_interpolator"/>
+        </aapt:attr>
+    </target>
+    <target android:name="bottom">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="pathData"
+                android:duration="300"
+                android:valueFrom="M 320 480 L 320 760 L 760 480 L 760 480 L 320 480 Z"
+                android:valueTo="M 200 560 L 200 720 L 760 720 L 760 560 L 200 560 Z"
+                android:valueType="pathType"
+                android:interpolator="@android:anim/accelerate_interpolator"/>
+        </aapt:attr>
+    </target>
+    <target android:name="group">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="rotation"
+                android:duration="300"
+                android:valueFrom="0"
+                android:valueTo="90"
+                android:valueType="floatType"
+                android:interpolator="@android:anim/accelerate_interpolator"/>
+        </aapt:attr>
+    </target>
+</animated-vector>
