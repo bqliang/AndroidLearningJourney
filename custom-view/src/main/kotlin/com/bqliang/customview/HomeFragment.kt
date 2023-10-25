@@ -9,6 +9,8 @@ import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.PreferenceGroup
 import androidx.preference.PreferenceManager
 import androidx.preference.PreferenceScreen
+import com.bqliang.customview.clip.CircleAvatarViewWithClipFragment
+import com.bqliang.customview.clip.SimpleClipRectViewFragment
 import com.bqliang.customview.simpledraw.DashBoardViewFragment
 import com.bqliang.customview.simpledraw.PieViewFragment
 import com.bqliang.customview.text.AlignCenterTextViewFragment
@@ -38,6 +40,10 @@ class HomeFragment : PreferenceFragmentCompat(),
                 fragment("AlignEdgeTextView", AlignEdgeTextViewFragment::class)
                 fragment("MultiLineTextView", MultiLineTextViewFragment::class)
                 fragment("NewsPaperView", NewsPaperViewFragment::class)
+            }
+            prefCategory("Clip") {
+                fragment("SimpleClipRectView", SimpleClipRectViewFragment::class)
+                fragment("CircleAvatarViewWithClip", CircleAvatarViewWithClipFragment::class)
             }
         }
     }
