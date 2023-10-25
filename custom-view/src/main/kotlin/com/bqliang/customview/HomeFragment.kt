@@ -18,6 +18,10 @@ import com.bqliang.customview.text.AlignEdgeTextViewFragment
 import com.bqliang.customview.text.MultiLineTextViewFragment
 import com.bqliang.customview.text.NewsPaperViewFragment
 import com.bqliang.customview.text.SportViewFragment
+import com.bqliang.customview.transformation.BevelFlipViewFragment
+import com.bqliang.customview.transformation.FlipViewFragment
+import com.bqliang.customview.transformation.HalfFlipViewFragment
+import com.bqliang.customview.transformation.Transformation2DFragment
 import com.bqliang.customview.xfermode.CircleAvatarViewWithXfermodeFragment
 import com.google.android.material.transition.MaterialSharedAxis
 import kotlin.reflect.KClass
@@ -44,6 +48,12 @@ class HomeFragment : PreferenceFragmentCompat(),
             prefCategory("Clip") {
                 fragment("SimpleClipRectView", SimpleClipRectViewFragment::class)
                 fragment("CircleAvatarViewWithClip", CircleAvatarViewWithClipFragment::class)
+            }
+            prefCategory("几何变换") {
+                fragment("Transformation2D", Transformation2DFragment::class)
+                fragment("FlipView", FlipViewFragment::class)
+                fragment("HalfFlipView", HalfFlipViewFragment::class)
+                fragment("BevelFlipView", BevelFlipViewFragment::class)
             }
         }
     }
