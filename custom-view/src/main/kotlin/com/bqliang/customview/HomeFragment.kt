@@ -21,6 +21,10 @@ import com.bqliang.customview.anim.animator.ViewPropertyAnimatorFragment
 import com.bqliang.customview.clip.CircleAvatarViewWithClipFragment
 import com.bqliang.customview.clip.SimpleClipRectViewFragment
 import com.bqliang.customview.drawable.CustomDrawableFragment
+import com.bqliang.customview.layout.AlwaysSquareImageView
+import com.bqliang.customview.layout.AlwaysSquareImageViewFragment
+import com.bqliang.customview.layout.CircleViewFragment
+import com.bqliang.customview.layout.FlowLayoutFragment
 import com.bqliang.customview.practise.MaterialEditTextPractiseFragment
 import com.bqliang.customview.simpledraw.DashBoardViewFragment
 import com.bqliang.customview.simpledraw.PieViewFragment
@@ -81,6 +85,11 @@ class HomeFragment : PreferenceFragmentCompat(),
             }
             prefCategory("自定义 Drawable") {
                 fragment("CustomDrawable", CustomDrawableFragment::class)
+            }
+            prefCategory("自定义布局") {
+                fragment("AlwaysSquareImageView", AlwaysSquareImageViewFragment::class)
+                fragment("CircleView", CircleViewFragment::class)
+                fragment("FlowLayout", FlowLayoutFragment::class)
             }
             prefCategory("Other") {
                 fragment("MaterialEditText", MaterialEditTextPractiseFragment::class)
