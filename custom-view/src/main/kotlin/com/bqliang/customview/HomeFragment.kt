@@ -21,6 +21,7 @@ import com.bqliang.customview.anim.animator.ViewPropertyAnimatorFragment
 import com.bqliang.customview.clip.CircleAvatarViewWithClipFragment
 import com.bqliang.customview.clip.SimpleClipRectViewFragment
 import com.bqliang.customview.drawable.CustomDrawableFragment
+import com.bqliang.customview.practise.MaterialEditTextPractiseFragment
 import com.bqliang.customview.simpledraw.DashBoardViewFragment
 import com.bqliang.customview.simpledraw.PieViewFragment
 import com.bqliang.customview.text.AlignCenterTextViewFragment
@@ -80,6 +81,9 @@ class HomeFragment : PreferenceFragmentCompat(),
             }
             prefCategory("自定义 Drawable") {
                 fragment("CustomDrawable", CustomDrawableFragment::class)
+            }
+            prefCategory("Other") {
+                fragment("MaterialEditText", MaterialEditTextPractiseFragment::class)
             }
         }
     }
