@@ -12,6 +12,12 @@ import androidx.preference.PreferenceScreen
 import com.bqliang.customview.anim.animation.FrameAnimWithAnimDrawableFragment
 import com.bqliang.customview.anim.animation.FrameAnimWithAnimatedVectorDrawableFragment
 import com.bqliang.customview.anim.animation.TweenAnimationFragment
+import com.bqliang.customview.anim.animator.AdvancedValueAnimatorFragment
+import com.bqliang.customview.anim.animator.AnimatorSetFragment
+import com.bqliang.customview.anim.animator.ObjAnimatorFragment
+import com.bqliang.customview.anim.animator.PropertyValueHolderFragment
+import com.bqliang.customview.anim.animator.SimpleValueAnimatorFragment
+import com.bqliang.customview.anim.animator.ViewPropertyAnimatorFragment
 import com.bqliang.customview.clip.CircleAvatarViewWithClipFragment
 import com.bqliang.customview.clip.SimpleClipRectViewFragment
 import com.bqliang.customview.simpledraw.DashBoardViewFragment
@@ -62,6 +68,14 @@ class HomeFragment : PreferenceFragmentCompat(),
                 fragment("帧动画-AnimationDrawable", FrameAnimWithAnimDrawableFragment::class)
                 fragment("帧动画-AnimationVectorDrawable", FrameAnimWithAnimatedVectorDrawableFragment::class)
                 fragment("补间动画", TweenAnimationFragment::class)
+            }
+            prefCategory("属性动画") {
+                fragment("ViewPropertyAnimator", ViewPropertyAnimatorFragment::class)
+                fragment("SimpleValueAnimator", SimpleValueAnimatorFragment::class)
+                fragment("AdvancedValueAnimator", AdvancedValueAnimatorFragment::class)
+                fragment("ObjectAnimator", ObjAnimatorFragment::class)
+                fragment("AnimatorSet", AnimatorSetFragment::class)
+                fragment("PropertyValuesHolder", PropertyValueHolderFragment::class)
             }
         }
     }
