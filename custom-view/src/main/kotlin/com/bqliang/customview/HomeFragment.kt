@@ -11,6 +11,7 @@ import androidx.preference.PreferenceManager
 import androidx.preference.PreferenceScreen
 import com.bqliang.customview.simpledraw.DashBoardViewFragment
 import com.bqliang.customview.simpledraw.PieViewFragment
+import com.bqliang.customview.xfermode.CircleAvatarViewWithXfermodeFragment
 import com.google.android.material.transition.MaterialSharedAxis
 import kotlin.reflect.KClass
 
@@ -22,6 +23,9 @@ class HomeFragment : PreferenceFragmentCompat(),
             prefCategory("图形的位置与测量") {
                 fragment("DashBoardView", DashBoardViewFragment::class)
                 fragment("PieView", PieViewFragment::class)
+            }
+            prefCategory("Xfermode") {
+                fragment("CircleAvatarView", CircleAvatarViewWithXfermodeFragment::class)
             }
         }
     }
