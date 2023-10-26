@@ -21,7 +21,6 @@ import com.bqliang.customview.anim.animator.ViewPropertyAnimatorFragment
 import com.bqliang.customview.clip.CircleAvatarViewWithClipFragment
 import com.bqliang.customview.clip.SimpleClipRectViewFragment
 import com.bqliang.customview.drawable.CustomDrawableFragment
-import com.bqliang.customview.layout.AlwaysSquareImageView
 import com.bqliang.customview.layout.AlwaysSquareImageViewFragment
 import com.bqliang.customview.layout.CircleViewFragment
 import com.bqliang.customview.layout.FlowLayoutFragment
@@ -33,6 +32,8 @@ import com.bqliang.customview.text.AlignEdgeTextViewFragment
 import com.bqliang.customview.text.MultiLineTextViewFragment
 import com.bqliang.customview.text.NewsPaperViewFragment
 import com.bqliang.customview.text.SportViewFragment
+import com.bqliang.customview.touch.DoubleTapPinchSpreadScalableImageViewFragment
+import com.bqliang.customview.touch.DoubleTapScalableImageViewFragment
 import com.bqliang.customview.transformation.BevelFlipViewFragment
 import com.bqliang.customview.transformation.FlipViewFragment
 import com.bqliang.customview.transformation.HalfFlipViewFragment
@@ -90,6 +91,10 @@ class HomeFragment : PreferenceFragmentCompat(),
                 fragment("AlwaysSquareImageView", AlwaysSquareImageViewFragment::class)
                 fragment("CircleView", CircleViewFragment::class)
                 fragment("FlowLayout", FlowLayoutFragment::class)
+            }
+            prefCategory("ScalableImageView") {
+                fragment("DoubleTap ScalableImageView", DoubleTapScalableImageViewFragment::class)
+                fragment("DoubleTap Pinch Spread ScalableImageViewFragment", DoubleTapPinchSpreadScalableImageViewFragment::class)
             }
             prefCategory("Other") {
                 fragment("MaterialEditText", MaterialEditTextPractiseFragment::class)
