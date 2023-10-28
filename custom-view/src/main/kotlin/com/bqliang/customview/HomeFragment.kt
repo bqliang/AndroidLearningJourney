@@ -38,6 +38,7 @@ import com.bqliang.customview.touch.custom.MultiTouchFragment1
 import com.bqliang.customview.touch.custom.MultiTouchFragment2
 import com.bqliang.customview.touch.custom.MultiTouchFragment3
 import com.bqliang.customview.touch.custom.SingleTouchFragment
+import com.bqliang.customview.touch.custom.TwoPagerFragment
 import com.bqliang.customview.transformation.BevelFlipViewFragment
 import com.bqliang.customview.transformation.FlipViewFragment
 import com.bqliang.customview.transformation.HalfFlipViewFragment
@@ -105,6 +106,9 @@ class HomeFragment : PreferenceFragmentCompat(),
                 fragment("接力型", MultiTouchFragment1::class)
                 fragment("合作型", MultiTouchFragment2::class)
                 fragment("各自为战型", MultiTouchFragment3::class)
+            }
+            prefCategory("ViewGroup 的触摸反馈") {
+                fragment("TwoPager", TwoPagerFragment::class)
             }
             prefCategory("Other") {
                 fragment("MaterialEditText", MaterialEditTextPractiseFragment::class)
