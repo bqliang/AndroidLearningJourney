@@ -39,6 +39,10 @@ import com.bqliang.customview.touch.custom.MultiTouchFragment2
 import com.bqliang.customview.touch.custom.MultiTouchFragment3
 import com.bqliang.customview.touch.custom.SingleTouchFragment
 import com.bqliang.customview.touch.custom.TwoPagerFragment
+import com.bqliang.customview.touch.drag.DragHelperFragment
+import com.bqliang.customview.touch.drag.DragListenerFragment
+import com.bqliang.customview.touch.drag.DragToCollectFragment
+import com.bqliang.customview.touch.drag.DragUpDownFragment
 import com.bqliang.customview.transformation.BevelFlipViewFragment
 import com.bqliang.customview.transformation.FlipViewFragment
 import com.bqliang.customview.transformation.HalfFlipViewFragment
@@ -109,6 +113,12 @@ class HomeFragment : PreferenceFragmentCompat(),
             }
             prefCategory("ViewGroup 的触摸反馈") {
                 fragment("TwoPager", TwoPagerFragment::class)
+            }
+            prefCategory("拖拽触摸反馈") {
+                fragment("DragListener", DragListenerFragment::class)
+                fragment("DragHelper", DragHelperFragment::class)
+                fragment("DragToCollect", DragToCollectFragment::class)
+                fragment("DragUpDown", DragUpDownFragment::class)
             }
             prefCategory("Other") {
                 fragment("MaterialEditText", MaterialEditTextPractiseFragment::class)
