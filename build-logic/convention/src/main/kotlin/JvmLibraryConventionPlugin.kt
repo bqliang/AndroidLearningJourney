@@ -6,6 +6,7 @@ class JvmLibraryConventionPlugin : Plugin<Project> {
     override fun apply(project: Project) {
         with(project) {
             with(pluginManager) {
+                apply("java-library")
                 apply("org.jetbrains.kotlin.jvm")
             }
             configureKotlinJvm()
