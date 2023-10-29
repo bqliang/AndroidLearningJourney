@@ -21,4 +21,5 @@ include(
     ":app",
     ":compose-app",
     ":custom-view",
+    ":thread",
 )
