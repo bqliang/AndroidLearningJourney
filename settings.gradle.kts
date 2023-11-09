@@ -22,4 +22,5 @@ include(
     ":compose-app",
     ":custom-view",
     ":thread",
+    ":generics",
 )
